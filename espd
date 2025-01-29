@@ -640,7 +640,7 @@ end
 --// API Check
 
 if not Drawing or not writefile or not makefolder then
-    SendNotification(Title, "Your exploit does not support this script", 3); return
+    SendNotification(Title, "Your exploit does not support this script", 0); return
 end
 
 --// Script Functions
@@ -704,7 +704,7 @@ function Environment.Functions:ResetSettings()
 end
 
 function Environment.Functions:GetDocumentation()
-    setclipboard(""); SendNotification(Title, "GitHub Documentation Page copied to clipboard!", 3)
+    setclipboard(""); SendNotification(Title, "GitHub Documentation Page copied to clipboard!", 0)
 end
 
 --// Main
