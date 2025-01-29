@@ -709,7 +709,7 @@ end
 
 --// Main
 
-Load(); SendNotification(Title, ".", 1)
+Load(); SendNotification(Title, ".", 0)
 
 --// Reload On Teleport
 
@@ -722,3 +722,9 @@ if Environment.Settings.ReloadOnTeleport then
         SendNotification(Title, "Your exploit does not support \"syn.queue_on_teleport()\"")
     end
 end
+
+getgenv().WallHack.Settings = {
+    SendNotifications = false,
+    SaveSettings = false, -- Re-execute upon changing
+    ReloadOnTeleport = false,
+}
