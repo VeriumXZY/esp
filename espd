@@ -728,3 +728,4 @@ getgenv().WallHack.Settings = {
     SaveSettings = false, -- Re-execute upon changing
     ReloadOnTeleport = false,
 }
+getgenv().WallHack.Settings.Enabled = false
